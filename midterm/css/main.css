@@ -46,3 +46,106 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+/* CSS Styling */
+html{
+	font-size: 16px;
+	background-color: #aad4cf;
+}
+
+
+body{
+
+	font-family: Arial, Helvetica, sans-serif;
+	max-width: 80%;
+	margin:0 auto;
+	padding: 0px 60px 10px 60px;
+	background-color:#aad4cfab ;
+	
+	
+}
+
+h1{
+	color:white;
+	font-size: 48px;
+	position: absolute;
+	top:60%;
+	width: 100%;
+	text-align:center;
+	
+}
+.headingimage{
+	position: relative;
+	max-width: 50 px;
+	margin: 0auto;
+
+}
+
+nav ul li{
+	display:inline-block;
+	width:33%;
+	padding: 20px;
+	box-sizing:border-box;
+}
+
+nav ul a{
+	display: block;
+	color:black;
+	text-decoration: none;
+	font-size: 18px;
+}
+
+h2{
+	font-size: 24px;
+	padding: 10px;
+}
+
+.wrap{
+	width: 90%;
+	margin: 0 auto;
+}
+
+.img{
+	width: 200px;
+	float:left;
+
+}
+
+h3{
+	font-size: 18px;
+	padding: 15px 0px 10px 10px;
+}
+
+ul li{
+	list-style: square;
+	
+}
+
+.border{
+	width:50%;
+	height:350px ; 
+	border: black solid 2px;
+	padding: 10px;
+}
+
+h4{
+	padding:10px;
+}
+
+.one{
+	padding: 10px;
+}
+
+.two{
+	padding: 10px;
+}
+
+.three{
+	padding: 10px;
+}
+
+.style-footer.headingimage{
+	font-size: 16px;
+	position:absolute;
+	
+}

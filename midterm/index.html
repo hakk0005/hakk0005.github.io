@@ -9,25 +9,26 @@
     </head>
     <!---------- heading part --------->
 
-    <body>
+    <body class="container">
 
         <header>
 
             <!-- adding the first lone starfish image -->
+            <div class="headingimage">
             <img src="images/lone-starfish-wide.jpg" alt="image of Starfish">
             <h1>Lone Starfish</h1>
-
+            </div>
             <!-- adding navagation -->
             <nav>
                 <ul>
                 <li>
-                    <a href="index.html">Home</a>
+                    <a href="index.html">HOME</a>
                 </li>
                 <li>
-                    <a href="story.html">Story</a>
+                    <a href="story.html">STORY</a>
                 </li>
                 <li>
-                    <a href="contact.html">Contact</a>
+                    <a href="contact.html">CONTACT</a>
                 </li>
                 </ul>
             </nav>
@@ -39,13 +40,13 @@
 
                 <h2>Life of a Starfish</h2>
 
+                <div class="wrap">
                 <!--------- adding the second lone starfish image ----------->
-                <img src="images/lone-starfish.jpg" alt="image of Starfish">
-
+                <img src="images/lone-starfish.jpg" alt="image of Starfish" class="img">
                 <p>
                     Swallower catla Black angelfish grunter striped bass scissor-tail rasbora; slender mola. Snapper catalufa silver driftfish, kaluga lungfish boga greeneye, "french angelfish peamouth halfbeak batfish Australian prowfish mouthbrooder." Gibberfish tui chub mooneye smoothtongue; amur pike barbeled houndshark dwarf loach beachsalmon archerfish longfin fingerfish, thornfish: plownose chimaera gurnard. Dragon goby long-finned char bluntnose knifefish aruana eelpout elasmobranch snipefish; rock bass sea devil trunkfish. Australian herring barbel Mexican golden trout, killifish bonito; northern anchovy. Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra. Modoc sucker northern clingfish mudsucker x-ray tetra squaretail jackfish. Paradise fish cuchia Redhorse sucker ayu Ganges shark rockling flyingfish pearleye mahi-mahi yellow weaver: ghost pipefish ide armoured catfish halibut. Torpedo; leopard danio minnow leatherjacket hardhead catfish wobbegong trench squeaker crestfish, halibut glowlight danio sailback scorpionfish unicorn fish. Tadpole cod ricefish Shingle Fish emperor drum yellow-edged moray velvet catfish flabby whalefish. Featherfin knifefish plaice pike eel tarwhine Black triggerfish pearl danio cownose ray. Merluccid hake, platy peamouth humuhumunukunukuapua'a barred danio. Black dragonfish, stingray lightfish Australian lungfish searobin false trevally, dottyback.
-                    </p>
-
+                </p>
+                </div>
                     <section>
 
                         <h3>Facts About Starfish</h3>
@@ -70,16 +71,17 @@
                         
                         <!-----------contact ,label, input part----------------------->
                         <h3>Contact to learn more</h3>
+                        <div class="border">
                         <form action="thanks.html" method="get">
-                            <div>
+                            <div class="one">
                                 <label for="fullname">Your Name</label>
                                 <input type="text" id="fullname" name="yourname" required>
                             </div>
-                            <div>
+                            <div class="two">
                                 <label for="youremail">Your Email</label>
                                 <input type="email" id="youremail" name="youremail" required>
                             </div>
-                            <div>
+                            <div class= "three">
                                 <label for="yourmessage">Your Message</label>
                                 <textarea name="yourmessage" id="yourmessage"></textarea>
                             </div>
@@ -94,9 +96,10 @@
                             </div>
                             <button type="submit">Send</button>
                         </form>
+                        </div>
                     </section>
             </article>
         </main>
-        <footer>&copy; Lone Starfish</footer>
+        <footer class="style-footer">&copy; Lone Starfish</footer>
     </body>
 </html>
