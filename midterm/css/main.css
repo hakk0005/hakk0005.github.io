@@ -135,15 +135,16 @@ h3{
 .border{
 	margin: 20px;
 	line-height: 2;
-	width:800px;
-	height:330px ; 
+	width:825px;
+	height:340px ; 
 	border: black solid 2px;
 	padding: 20px;
 }
 
 
 textarea{
-	width:700px
+	width:830px;
+	height: 60px; 
 }
 
 h4{
@@ -160,7 +161,7 @@ h3 div{
 	font-weight: bold;
 	left:750px;
    position:relative;
-   margin: 3px;
+   
 	
 }
 /* adjusting the font size of "send" and the box modeling */
