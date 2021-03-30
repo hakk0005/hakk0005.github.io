@@ -347,4 +347,5 @@ news section
 .news .right h3{
     margin-top:0;
     font-size:1.5rem;
+    align-items: top;
 }
