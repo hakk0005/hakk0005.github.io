@@ -44,3 +44,175 @@ table {
 
      /*------ CSS STYLE ---- */
 
+	 .body{
+		max-width: 1200px;
+		font-size: 16px;
+	}
+
+	h1{
+		color: white;
+		font-size: 46px;
+		font-weight:bold;
+	}
+	h2{
+		font-size:36px;
+		font-weight:bold;
+		padding:10px;
+	}
+	h3{
+		font-size: 28px;
+		font-weight: bold;
+		padding: 10px;
+	}
+	.first{
+		max-width: 100%;
+	}
+
+	nav{
+		background-color: #222;
+		text-align: center;
+	}
+
+	nav ul li a{
+		text-decoration: none;
+		list-style: none;
+		color: #C78C06;
+		text-align: center;
+	}
+	.fa-search{
+		max-width:30px;
+		color:#C78C06;
+		border: 1px solid;
+		padding: 1px;
+	}
+.hero{
+   background: url("../images/main-banner.jpg") no-repeat center center;
+   background-size: cover;
+   display: block;
+   max-width: 100%;
+}
+.banner{
+   color:white;
+   background-color: rgba(34, 34, 34, 0.404);
+}
+.srch{
+   background-color:#C78C06;
+   padding:3px;
+   margin:auto;
+}
+
+
+/* ABOUT US SECTION */
+.us{
+   background-color: #ffe6ac;
+   padding: 10px;
+   margin:10px;
+}
+
+img{
+   max-width: 100%;
+}
+
+.us p{
+   padding: 5px;
+}
+
+/* SERVICES SECTION */
+
+/* DIGITAL  */
+.digital{
+   background-color:#ffe6ac;
+   padding: 10px;
+   margin: 10px;
+}
+
+.dig{
+   width:100%;
+}
+
+.btn{
+   background-color: #222;
+   color: white;
+   padding: 15px;
+   margin-top: 10px;
+}
+
+/* MARKETING */
+.marketing{
+   background-color:#ffe6ac;
+   padding:10px;
+   margin: 10px;
+}
+
+.mar{
+   width:100%;
+}
+
+/* VIDEO */
+.video{
+   background:#ffe6ac;
+   padding: 10px;
+   margin:10px;
+}
+
+.vimge{
+   width:100%;
+}
+
+/* WEB */
+.web{
+   background-color: #ffe6ac;
+   padding:10px;
+   margin:10px;
+}
+
+/* PRINT */
+.print{
+   background-color: #ffe6ac;
+   padding: 10px;
+   margin: 10px;
+}
+.pri{
+	width: 100%;
+}
+
+/* VISION */
+.vision{
+   background: url("../images/vision.jpg" ) no-repeat center center;
+   color: white;
+}
+.v-btn{
+   color: white;
+   background-color: rgba(34, 34, 34, 0.541);
+   border: 1px solid #C78C06;
+   padding: 15px;
+   margin: 10px;
+}
+
+/* TEAM */
+.john{
+   background-color:#ffe6ac;
+   margin:10px;
+}
+.jon{
+   width: 100%;
+}
+
+.john p{
+   padding:10px;
+}
+
+strong{
+   display: block;
+   font-weight: bold;
+   padding-left:10px;
+   border-bottom:solid 1px #C78C06;
+}
+
+.bob{
+   background-color: #ffe6ac;
+   margin:10px;
+}
+.bob p{
+   padding:10px;
+}
