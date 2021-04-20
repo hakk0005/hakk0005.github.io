@@ -122,9 +122,8 @@ table {
 .hero{
    background: url("../images/main-banner.jpg") no-repeat center;
    background-size: cover;
-   display: flex;
    width: 100%;
-   height:400px;
+   display:block;
    margin-bottom: 0;
    padding: 2rem 0;
 }
@@ -132,7 +131,7 @@ table {
    background-color: rgba(0,0,0,.5);
    color:white;
    margin:auto;
-   padding: 2em;
+   padding: 3em;
 }
 .banner p{
    margin: 10px;
