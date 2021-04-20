@@ -8,31 +8,33 @@
     <title>Final Project</title>
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://kit.fontawesome.com/ff06fdd5ac.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
 
         <!-- NAVIGATION PART -->
-        <nav>
-            <img class="stars" src="./images/logo.png" alt="stars">
+        <nav class="navigation">
+            
             <ul class="navul">
+                <li><img class="stars" src="./images/logo.png" alt="stars"></li>
                 <li> <a href="index.html" class="home"> Home </a> </li>
                 <li> <a href="about-us.html" class="about"> About Us</a> </li>
                 <li> <a href="services.html" class="ser"> Services </a> </li>
                 <li> <a href="team.html" class="te"> Team </a> </li>
                 <li> <a href="contact.html" class="con"> Contact </a></li>
+                <li> <!--search area--><form action="search.html" method="get" class="search-area"> <input type="text" name="search" id="search" placeholder="search"> <i class="fas fa-search"></i> </form> </li>
             </ul>
-            <label for="search"></label>
-            <textarea name="search" id="search"> Search</textarea> <i class="fas fa-search"></i>
+            
         </nav>
         <!-- H1 "BACKGROUND IMAGE" -->
         <section class="hero">
             <div class="banner">
             <h1> Welcome to Three Star Media</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum placeat nesciunt eum pariatur, illo
-                tempora quasi cumque commodi magni recusandae quos explicabo, provident veritatis! Quo recusandae
-                nesciunt dolor quis soluta.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum placeat nesciunt eum pariatur, illo tempora quasi cumque commodi magni recusandae quos explicabo, provident veritatis! Quo recusandae
+            nesciunt dolor quis soluta. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             <div>
                 <button class="srch">Connect with us <i class="fas fa-caret-right"></i></button>
             </div>
@@ -125,20 +127,24 @@
             <div class="john">
                 <!-- JOHN -->
                 <img class="jon" src="./images/john.jpg" alt="john">
+                <div class="content-1">
                 <h3> John Doe </h3>
                 <strong>CEO and Co-owner</strong>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus quam quidem at non, maiores nihil
                     accusamus commodi, placeat distinctio possimus saepe exercitationem quae a officia ad asperiores
                     reprehenderit ratione soluta.</p>
+                </div>
             </div>
             <div class="bob">
                 <!-- BOB -->
                 <img class="bob2" src="./images/bob.jpg" alt="bob">
+                <div class="content-2">
                 <h3>Bob Rite</h3>
                 <strong>CFO and Co-owner</strong>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi, illo iure mollitia facere libero
                     sit. Adipisci, magni omnis officiis animi pariatur in quaerat enim harum vero itaque eveniet dolore
                     iure?</p>
+                </div>
             </div>
         </section>
 
