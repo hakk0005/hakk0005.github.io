@@ -49,8 +49,6 @@ body {
     background-color: #F7F7FF;
     font-family: 'Montserrat', sans-serif;
     line-height: 1.5rem;
-    margin: 0 auto;
-    width: 500px;
     font-size: 16px;
 }
 
@@ -69,11 +67,13 @@ h1, h2, h3{
 h1{
     font-size: 60px;
     line-height: 3.5rem;
+    margin-bottom: 3px;
 }
 
 h2{
     font-size: 40px;
     line-height: 3rem; 
+    margin-bottom: 3px;
 }
 
 h3{
@@ -83,7 +83,8 @@ h3{
 }
 
 .scooter{
-    width: 400px;
+    width: 300px;
+    margin-left: 3em;
 }
 
 
@@ -94,7 +95,7 @@ form {
     box-shadow: 6px 6px 2px rgba(128, 128, 128, 0.671);
     width: 300px;
     height: 400px;
-    margin: 1em;
+    margin-left: 1.5em;
 }
 
 .contact input{
@@ -133,10 +134,11 @@ form {
 }
 
 footer{
+    margin-top: 4em;
     width: 100%;
+    position: absolute;
     background-color: #FFFD8C;
-    text-align:center;
-    height: 250px;
+    text-align: center;
 }
 
 footer div{
@@ -153,10 +155,10 @@ padding: 2px;
 }
 
 #hours{
-    width: 50px;
+    width: 49px;
 }
 .city{
-    width: 300px;
+    width: 224px;
 }
 
 .calculate{
@@ -164,12 +166,18 @@ padding: 2px;
     color:white;
     font-weight: 600;
     border: none;
-    width: 365px;
+    width: 302px;
     height: 40px;
     border-radius: 8px;
     font-size: 20px;
     margin: 5px;
     padding: 2px;
+}
+
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: table;
 }
 
 .images{
@@ -181,3 +189,105 @@ padding: 2px;
 .facebook{
     border-radius: 20px;
 }
+/* TABLET SCREEN */
+@media screen and ( min-width: 600px) {
+    body{
+        width: 600px;
+    }
+
+    h1{
+        font-size: 80px;
+        line-height: 5rem;
+    }
+
+    .scooter{
+        width: 420px;
+        margin-left: 1.5rem;
+        padding-bottom: 1em;
+    }
+
+    form{
+        width: 400px;
+        margin: 0 auto;
+    }
+
+    .contact input{
+        width: 380px;
+    }
+
+    .button{
+        width: 380px;
+    }
+
+    footer{
+        width: 100%;
+        margin-top: 4em;
+        position: absolute;
+    }
+
+    .earns{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content:center;
+    }
+
+    .calculate{
+        width: 200px;
+    }
+
+    .images{
+        width: 300px;
+        margin:auto;
+    }
+}
+/* DESKTOP SCREEN */
+@media screen and ( min-width: 1080px) {
+    .logo{
+        padding-left: 3em;
+    }
+
+    .scooter{
+        width: 600px;
+        margin: auto;
+    }
+    main{
+        width:800px;
+        margin-top: 1em;
+        padding-left: 3em;
+        display: grid;
+        grid-template-columns: repeat(3, 500px);
+        grid-template-areas: 'head image form';
+    }
+
+    .head{
+        grid-area: head;
+    }
+    .scooter{
+        grid-area: image;
+    }
+    .form{
+        grid-area: form;
+    }
+    header p{
+        padding-top: 1em;
+    }
+
+    footer{
+        margin-top: 3em;
+        width: 100%;
+        height: 200px;
+        text-align: left;
+        padding-left: 4em;
+        position: absolute;
+    }
+    .footer{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .images{
+        float: right;
+    }
+    
+
+} 
