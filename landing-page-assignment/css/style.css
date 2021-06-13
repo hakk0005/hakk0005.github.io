@@ -151,6 +151,11 @@ main {
     margin-right: 20px;
 }
 
+/* This is the text used for the desktop screen size */
+.start {
+    display: none;
+}
+
 .logo {
     width: 20%;
     margin: 30px;
@@ -352,6 +357,14 @@ footer div {
 @media screen and (min-width: 1080px) {
     .logo {
         padding-left: 3em;
+    }
+/* Hided the text used for the tablet and mobile screen sizes and desplayed the text used for the desktop screen */
+    .below{
+        display: none;
+    }
+
+    .start {
+        display: block;
     }
 
     .scooter {
