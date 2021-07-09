@@ -47,18 +47,24 @@ table {
 /* CSS STYLING */
 
 /* --------------------------------MOBILE VERSION----------------------------- */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
 
 body {
     line-height: 1.5;
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
+    height: 800px;
 }
 .bk {
-    background: url('./images/mash-asKZUEc5-Jk-unsplash.jpg') center no-repeat;
+    background: url('./images/priscilla-du-preez-EWcWW951w5M-unsplash.jpg') center no-repeat;
     background-size: cover;
     width: 100%;
-    height: 100vh;
+    height: fit-content;
     position: relative;
 } 
 .logo1 {
@@ -74,7 +80,6 @@ a {
     font-size: 14px;
     text-decoration: none;
     list-style: none;
-    text-align: center;
     padding-top: 10px;
 }
 
@@ -84,23 +89,70 @@ li a:hover{
 }
 
 nav {
-background-color: #dbaea39c;
+background-color: #89678bd0;
 display: flex;
 flex-direction: column;
+flex-wrap: wrap;
 justify-content: space-between;
 align-items: center;
 padding: 10px;
+text-align: center;
 }
 
 h1 {
     color: #6b6b6b;
     font-size: 38px;
     font-weight: 700;
+    animation: glow 1.5s ease-in-out infinite;
+border-radius: 20px;
+}
+
+@keyframes glow {
+    0%, 10%{
+        color: #89678b;
+        box-shadow: none;
+    }
+
+    20%, 30%{
+        color:lightblue;
+        box-shadow: 0 0 10px rgb(196, 230, 241), 
+        0 0 20px rgb(196, 230, 241),
+        0 0 40px rgb(196, 230, 241), 
+        0 0 80px rgb(196, 230, 241),
+        0 0 160px rgb(196, 230, 241);
+    }
+
+     40%, 50% {
+        color: lightpink;
+        box-shadow: 0 0 10px rgb(250, 208, 215), 
+        0 0 20px rgb(250, 208, 215),
+        0 0 40px rgb(250, 208, 215), 
+        0 0 80px rgb(250, 208, 215),
+        0 0 160px rgb(250, 208, 215);
+    }
+
+    60%, 70%, 80% {
+        color:lightgoldenrodyellow;
+        box-shadow: 0 0 10px rgb(235, 235, 210), 
+        0 0 20px rgb(235, 235, 210),
+        0 0 40px rgb(235, 235, 210), 
+        0 0 80px rgb(235, 235, 210),
+        0 0 160px rgb(235, 235, 210);
+    }
+     85%, 90%, 95%, 100% {
+        color: white;
+        box-shadow: 0 0 10px #f2f2f2, 
+        0 0 20px #f2f2f2,
+        0 0 40px #f2f2f2, 
+        0 0 80px #f2f2f2,
+        0 0 160px #f2f2f2;
+    }
 }
 .valentine{
     display: none;
+    filter:opacity(.6);
 }
-main p {
+.home p {
     color: #464545;
     font-size: 18px;
     margin-top: 10px;
@@ -109,14 +161,14 @@ main p {
 button {
     color: snow;
     font-size: 12px;
-    background-color: #F06291;
+    background-color: #856986;
     border: none; 
     padding: 5px;
     margin: 10px;
     border-radius: 20px;
 }
 
-main {
+.home {
 background-color: rgba(255, 250, 250, 0.616);
 margin: 35px;
 padding: 20px;
@@ -127,7 +179,7 @@ text-align: center;
 }
 
 footer {
-background-color: #dbaea39c;
+background-color: #89678b;
 padding: 20px;
 }
 
@@ -148,7 +200,6 @@ footer p{
     margin-top: 3px;
 }
 
-
 /*----------------------------------- products page --------------------------------- */
 h2 {
     color:#6b6b6b;
@@ -166,9 +217,11 @@ h2 {
     padding: 30px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
 }
-
+.products-main{
+    height: 800px;
+}
 .products-main div{
     margin-bottom: 5px;
 }
@@ -189,7 +242,7 @@ h2 {
     left: 0;
     right: 0;
     top: 0.3%;
-    background-color: #DBAEA3;
+    background-color: #a47faf;
     overflow: hidden;
     width: 100px;
     height:0;
@@ -210,6 +263,14 @@ h2 {
     transform: translate(-50%, -50%);
     text-align: center;
   }
+
+  .text-2 {
+      color: snow;
+      position: absolute;
+      bottom: 5px;
+      left: 30%;
+  }
+
 /* MILKSHAKES */
 .milkshake img {
 width: 100px;
@@ -232,27 +293,138 @@ box-shadow: 7px 6px 4px rgba(0, 0, 0, 0.12);
   }
   
   @keyframes shake {
-    0% { transform: translate(1px, 1px) rotate(1deg); }
-    10% { transform: translate(-1px, -2px) rotate(-4deg); }
-    20% { transform: translate(-3px, 0px) rotate(3deg); }
-    30% { transform: translate(3px, 2px) rotate(1deg); }
-    40% { transform: translate(1px, -1px) rotate(3deg); }
-    50% { transform: translate(-1px, 2px) rotate(-4deg); }
+    0% { transform: translate(1px, 2px) rotate(1deg); }
+    10% { transform: translate(-1px, -3px) rotate(-4deg); }
+    20% { transform: translate(-5px, 1px) rotate(3deg); }
+    30% { transform: translate(4px, 3px) rotate(1deg); }
+    40% { transform: translate(2px, -2px) rotate(3deg); }
+    50% { transform: translate(-2px, 2px) rotate(-4deg); }
     60% { transform: translate(-3px, 1px) rotate(1deg); }
     70% { transform: translate(3px, 1px) rotate(-4deg); }
     80% { transform: translate(-1px, -1px) rotate(3deg); }
     90% { transform: translate(1px, 2px) rotate(0deg); }
     100% { transform: translate(1px, -2px) rotate(-4deg); }
   }
-
   /* ----------------------------about us page-------------------------------- */
+  .about-main { 
+      display: flex;
+      flex-direction: column;
+  }
+  .story{
+      border-bottom: #a47faf solid 1px;
+      padding: 9px;
+  }
+  .about-p {
+      font-size: 14px;
+  }
+  .founder img{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+  }
+.meet {
+    float: left;
+    width: fit-content;
+    margin: 16px;
+    padding: 0 8px;
+  }
+  .email{
+      font-size: 12px;
+  }
+  
+  /* Add some shadows to create a card effect */
+  .founder {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Some left and right padding inside the container */
+  .box {
+    padding: 0 16px;
+  }     
+  
+  /* Clear floats */
+  .box::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title {
+    color: grey;
+  }
+  
+  .button-about {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #a47faf;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .button:hover {
+    background-color: #555;
+  }
 
+
+  /* ----------------------------------- contact us page ---------------------------------- */
+
+  .contact label {
+      display: none;
+  }
+  /* }
+
+  .contact input, textarea {
+      border-radius: 20px;
+      border: none;
+      height: 20px;
+  }
+  .contact {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+  } */
+
+
+input, textarea {
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box;
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+}
   
+ 
+  .submit {
+    background-color: #a47faf;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    height: 20px;
+  }
   
+ 
+  input .submit:hover {
+    background-color: #464545;
+  }
+  
+  .contact {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
 
 @media screen and (min-width: 600px) {
 
-
+h2{
+    font-size: 2rem;
+}
 nav {
     display: flex;
     flex-direction: row;
@@ -270,20 +442,74 @@ a {
 padding-right: 20px;
 margin: 20px;
 }
+
 .logo {
     width: 30%;
+}
+/* product page */
+
+.products-main {
+    height: 1200px;
+}
+.products-main div{
+    margin-bottom: 0 10px 0 10px;
+}
+.image {
+    width: 200px;
+    height: 250px;
+}
+
+.overlay {
+    width: 200px;
+}
+.flavor:hover .overlay {
+    height: 250px;
+  }
+.text {
+font-size: 20px;
+}
+
+/* MILKSHAKE */
+
+.milkshake img{
+    width: 200px;
+    height: 250px;
+
+}
+.cones {
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+/* about us page */
+.about-p {
+    font-size: 1.5rem;
+    padding: 10px;
+}
+.about-main { 
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+}
+
+.story {
+border-bottom: none;
+border-right: #a47faf solid 1px;;
 }
 }
 
 @media screen and (min-width: 1200px) {
-.bk{
+.bk {
     width: 100%;
 }
-nav{
+nav {
     background-color: #dbaea300;
 }
 
-.logo{
+.logo {
     display:none;
 }
 
@@ -299,20 +525,21 @@ a {
 }
 
 li a:hover {
-    color:#F06291;
+    color:#a47faf;
 }
 
 main {
     text-align: left;
 }
-.valentine{
+
+.valentine {
     display: block;
     float: right;
     width: 500px;
     margin-left: 25px;
 }
 
-main{
+.home {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -321,20 +548,51 @@ main{
     'button img';
 }
 
-h1{
+h1 {
     grid-area: h1;
 }
-.valentine{
+.valentine {
     grid-area: img;
 }
-main p{
+.home p {
     grid-area: p;
 }
 
-button{
+button {
     grid-area: button;
     width: 150px;
     height: 10vh;
 }
+
+/* product page */
+.cones{
+    margin-bottom: 200px;
+}
+.products-main {
+    height: 800px;
+}
+.products-main div{
+    margin-bottom: 20px 30px 20px 30px;
+}
+.image {
+    width: 300px;
+    height: 350px;
+}
+
+.overlay {
+    width: 300px;
+}
+.flavor:hover .overlay {
+    height: 350px;
+  }
+.text {
+font-size: 28px;
+}
+
+
+
+/* about us page */
+
+
 }
 
