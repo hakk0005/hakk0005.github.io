@@ -502,6 +502,9 @@ border-right: #a47faf solid 1px;;
 }
 
 @media screen and (min-width: 1200px) {
+    body {
+    height: 700px;
+    }
 .bk {
     width: 100%;
 }
@@ -543,7 +546,8 @@ main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    grid-template-areas: 'h1 img'
+    grid-template-areas: 
+    'h1 img'
     'p img'
     'button img';
 }
