@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -88,6 +89,8 @@ li a:hover{
     font-weight:700; 
 }
 
+/* used flex to get the nav links in a column direction for mobile screen size and row direction for desktop screen size */
+
 nav {
 background-color: #89678bd0;
 display: flex;
@@ -105,7 +108,7 @@ font-weight: 700;
 animation: glow 1.5s ease-in-out infinite;
 border-radius: 20px;
 }
-/* adding a glowing animation by adding different colors and shadow colors too */
+/* adding a glowing animation by adding different colors and shadow colors to h1 */
 @keyframes glow {
     0%, 10%{
         color: #89678b;
@@ -201,7 +204,7 @@ footer p{
 .social-media img {
     width: 20px;
 }
-
+/* used flex for social media icon to get them in row with an even space between them */
 .social-media{
     display: flex;
     flex-direction: row;
@@ -245,7 +248,7 @@ h2 {
     height: 150px; 
     box-shadow: 7px 6px 4px rgba(0, 0, 0, 0.12);
   }
-  /*  */
+  /* adjusted the overlay color and position so it will show as a drop down overlay whenever users hover over */
   .overlay {
     position: absolute;
     bottom: 100%;
@@ -480,7 +483,7 @@ height: 150vh;
 }
 
 .products-main div{
-    margin-bottom: 0 10px 0 10px;
+    margin-bottom: 50px;
 }
 
 .image {
@@ -525,7 +528,7 @@ font-size: 20px;
 .about-main { 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
+    grid-template-rows: auto;
 }
 
 .story {
@@ -552,7 +555,7 @@ border-right: #a47faf solid 1px;;
 nav {
     background-color: #dbaea300;
 }
-
+/* Displaying the desktop logo */
 .logo {
     display:none;
 }
@@ -713,9 +716,7 @@ font-size: 28px;
   }
 
 /* Contact us */
-main{
-    height: 600px;
-}
+
 .contact {
     width: 60%;
     margin: 0 auto;
