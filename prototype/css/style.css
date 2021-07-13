@@ -219,7 +219,7 @@ h2 {
 }
 
 .cones-bk{
-    background: url('./images/photo-1554521718-e87e96d67ca5.jpg') center no-repeat fixed;
+    background: url('./images/photo-1554521718-e87e96d67ca5.jpg') center no-repeat;
     background-size: cover;
     height: 100vh;
 }
