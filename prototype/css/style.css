@@ -54,12 +54,12 @@ box-sizing: border-box;
 }
 
 body {
-    line-height: 2;
+    line-height: 1.5;
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
-    height: 800px;
 }
+
 .bk {
     background: url('./images/priscilla-du-preez-EWcWW951w5M-unsplash.jpg') center no-repeat;
     background-size: cover;
@@ -150,12 +150,15 @@ border-radius: 20px;
 .valentine{
     display: none;
     filter:opacity(.5);
+    height: 250px;
+
 }
 .home p {
     color: #464545;
     font-size: 18px;
-    margin-top: 10px;
+    margin: 20px;
 }
+
 .btn{
     border-radius: 5px;
     color: snow;
@@ -166,14 +169,21 @@ border-radius: 20px;
     margin: 10px;
 }
 
+.btn:hover {
+    background-color: #ccc;
+    color:black;
+    font-weight: 700;
+}
+
 
 .home {
 background-color: rgba(255, 250, 250, 0.616);
 margin: 35px;
-padding: 20px;
+padding: 25px;
 border-radius: 20px;
 box-shadow: 7px 6px 4px rgba(0, 0, 0, 0.12);
 text-align: center;
+height: 450px;
 
 }
 
@@ -232,10 +242,10 @@ h2 {
   .image {
     display: block;
     width: 100px;
-    height: 150px;
+    height: 150px; 
     box-shadow: 7px 6px 4px rgba(0, 0, 0, 0.12);
   }
-  
+  /*  */
   .overlay {
     position: absolute;
     bottom: 100%;
@@ -246,7 +256,7 @@ h2 {
     overflow: hidden;
     width: 100px;
     height:0;
-    transition: .5s ease;
+    transition: .5s ease-in-out;
   }
   
   .flavor:hover .overlay {
@@ -256,7 +266,7 @@ h2 {
   
   .text {
     color: white;
-    font-size: 18px;
+    font-size: 16px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -269,6 +279,7 @@ h2 {
       position: absolute;
       bottom: 5px;
       left: 30%;
+      font-size: 14px;
   }
 
 /* MILKSHAKES */
@@ -289,26 +300,46 @@ box-shadow: 7px 6px 4px rgba(0, 0, 0, 0.12);
     justify-content: space-evenly;
     border:rgba(255, 250, 250, 0.616);
     padding: 10px;
-    position: relative;
 }
-
+/* when the user hover, the images will move a bit that's why i used translate and then start rotating. That's how it shakes */
 .milkshake img:hover {
-    animation: shake 0.5s;
-    animation-iteration-count: infinite;
+    animation: shake 0.5s infinite;
   }
   
   @keyframes shake {
-    0% { transform: translate(1px, 2px) rotate(1deg); }
-    10% { transform: translate(-1px, -3px) rotate(-4deg); }
-    20% { transform: translate(-5px, 1px) rotate(3deg); }
-    30% { transform: translate(4px, 3px) rotate(1deg); }
-    40% { transform: translate(2px, -2px) rotate(3deg); }
-    50% { transform: translate(-2px, 2px) rotate(-4deg); }
-    60% { transform: translate(-3px, 1px) rotate(1deg); }
-    70% { transform: translate(3px, 1px) rotate(-4deg); }
-    80% { transform: translate(-1px, -1px) rotate(3deg); }
-    90% { transform: translate(1px, 2px) rotate(0deg); }
-    100% { transform: translate(1px, -2px) rotate(-4deg); }
+    0% { 
+        transform: translate(1px, 2px) rotate(1deg);
+     }
+    10% {
+         transform: translate(-1px, -3px) rotate(-4deg);
+         }
+    20% {
+         transform: translate(-5px, 1px) rotate(3deg);
+         }
+    30% {
+         transform: translate(4px, 3px) rotate(1deg); 
+        }
+    40% {
+         transform: translate(2px, -2px) rotate(3deg);
+         }
+    50% {
+         transform: translate(-2px, 2px) rotate(-4deg); 
+        }
+    60% { 
+        transform: translate(-3px, 1px) rotate(1deg);
+     }
+    70% { 
+        transform: translate(3px, 1px) rotate(-4deg);
+     }
+    80% {
+         transform: translate(-1px, -1px) rotate(3deg);
+         }
+    90% {
+         transform: translate(1px, 2px) rotate(0deg); 
+        }
+    100% {
+         transform: translate(1px, -2px) rotate(-4deg);
+         }
   }
   /* ----------------------------about us page-------------------------------- */
   .about-main { 
@@ -322,6 +353,8 @@ box-shadow: 7px 6px 4px rgba(0, 0, 0, 0.12);
   .about-p {
       font-size: 14px;
   }
+
+  /* This images is just displaying in the desktop screen size */
   .about-fruits{
       display: none;
   }
@@ -341,17 +374,15 @@ box-shadow: 7px 6px 4px rgba(0, 0, 0, 0.12);
       font-size: 12px;
   }
   
-  /* Add some shadows to create a card effect */
   .founder {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   }
   
-  /* Some left and right padding inside the container */
   .box {
     padding: 0 16px;
   }     
   
-  /* Clear floats */
+  /* Clearing floats */
   .box::after, .row::after {
     content: "";
     clear: both;
@@ -408,10 +439,12 @@ input, textarea {
   }
 
 @media screen and (min-width: 600px) {
-    body {
-        height: 900px;
-    }
-h2{
+.home {
+    height: fit-content;
+    line-height: 2;
+    padding: 30px;
+}
+h2 {
     font-size: 2rem;
     margin: 5px;
 }
@@ -425,7 +458,6 @@ ul {
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
-
 }
 
 a {
@@ -440,13 +472,17 @@ margin: 20px;
     font-size: 16px;
 }
 /* product page */
-
-.products-main {
-    height: 1300px;
+.cones-bk{
+height: 150vh;
 }
+.products-main {
+    height: 800px;
+}
+
 .products-main div{
     margin-bottom: 0 10px 0 10px;
 }
+
 .image {
     width: 200px;
     height: 250px;
@@ -457,9 +493,13 @@ margin: 20px;
 }
 .flavor:hover .overlay {
     height: 250px;
-  }
+}
+
 .text {
 font-size: 20px;
+}
+.text-2{
+    font-size: 16px;
 }
 
 /* MILKSHAKE */
@@ -477,7 +517,7 @@ font-size: 20px;
     justify-content: space-evenly;
 }
 
-/* about us page */
+/*-------- about us page--------- */
 .about-p {
     font-size: 1.5rem;
     padding: 10px;
@@ -502,9 +542,10 @@ border-right: #a47faf solid 1px;;
 }
 
 @media screen and (min-width: 1200px) {
-    body {
-    height: 700px;
-    }
+.home {
+    height: 600px;
+ }
+
 .bk {
     width: 100%;
 }
@@ -539,10 +580,12 @@ main {
     display: block;
     float: right;
     width: 500px;
+    height: 333px;
     margin-left: 50px;
 }
-
+/* grid has been used, to display valentine image and make an area for each element in the home section  */
 .home {
+    padding: 40px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -575,7 +618,7 @@ footer {
 
 /* product page */
 .cones-bk{
-height: 120vh;
+height: 160vh;
 }
 .cones{
     margin-bottom: 200px;
@@ -632,6 +675,8 @@ font-size: 28px;
     padding: 10px;
     box-shadow:  7px 6px 4px rgba(0, 0, 0, 0.12);
 }
+
+/* I added transform to make the image rotate in a specific degree, and i changed the width so it will pop */
 .about-fruits:hover{
     animation: slow-pop 1.5s infinite;
 }
