@@ -266,7 +266,7 @@ h2 {
   
   .text {
     color: white;
-    font-size: 16px;
+    font-size: 14px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -279,7 +279,7 @@ h2 {
       position: absolute;
       bottom: 5px;
       left: 30%;
-      font-size: 14px;
+      font-size: 12px;
   }
 
 /* MILKSHAKES */
