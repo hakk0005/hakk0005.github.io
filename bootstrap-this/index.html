@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <title>Bootstrap This Exercise</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand text-light" href="#">Bootstrap This!</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">About Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Contact Us
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#"> Location </a></li>
+                <li><a class="dropdown-item" href="#"></a> Social Media </li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#"> Policies </a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-light" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <h1 class=" bg-light text-danger display-3 text-center mt-8">This is My Bootstrap Exercise.</h1>
+    <h2 class="display-5 pt-1 mb-4">What is Bootstrap!</h2>
+    <p class="fs-4"> Bootstrap is a powerful free framework that makes the web development easier and faster. It is a collection of HTML, CSS and Javascript.</p>
+    <h3> The Best Two Advatages of Bootstrap.</h4>
+    <p class="fs-4"> It is the most famous framework for building mobile first responsive sites and the grid system </p>
+    <h3> How Can We Use Bootstrap?</h3>
+    <p class="fs-4"> Bootstrap is a free open source. Basically it is based on classes, and that would make us use less CSS. If we want to use bootsrtap, we have to first go the bootsrtap website, and then go to "getting started". We can search for anything like components, forms, layouts, etc. </p>
+    <h3>Components</h3>
+    <p class="fs-4"> Bootstrap comes with an extensive components library that includes buttons and lists to carousels and modals. Components are easy to integrate into any site and require no knowledge of JavaScript to use.
+    </p>
+    <h4>Components: Carouels:</h4>
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/code.jpg" class="d-block w-100" alt="Code">
+          </div>
+          <div class="carousel-item">
+            <img src="images/developer-team-coding-javascript.jpg" class="d-block w-100" alt="Developer-team">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+<h4>Components: Buttons:</h4>
+<p class="fs-4">Bootstrap provides several buttons styles and sizes:</p>
+<div class="container bg-dark">
+  <p class="text-light text-center">Regular Buttons</p>
+  <div class="d-flex flex-row justify-content-around mb-3">
+<button type="button" class="btn btn-primary">Primary</button>
+<button type="button" class="btn btn-secondary">Secondary</button>
+<button type="button" class="btn btn-success">Success</button>
+<button type="button" class="btn btn-danger">Danger</button>
+<button type="button" class="btn btn-warning">Warning</button>
+<button type="button" class="btn btn-info">Info</button>
+<button type="button" class="btn btn-light">Light</button>
+<button type="button" class="btn btn-dark">Dark</button>
+</div>
+<p class="text-light text-center">Outlined Buttons</p>
+<div class="d-flex flex-row justify-content-around mb-3">
+<button type="button" class="btn btn-outline-primary">Primary</button>
+<button type="button" class="btn btn-outline-secondary">Secondary</button>
+<button type="button" class="btn btn-outline-success">Success</button>
+<button type="button" class="btn btn-outline-danger">Danger</button>
+<button type="button" class="btn btn-outline-warning">Warning</button>
+<button type="button" class="btn btn-outline-info">Info</button>
+<button type="button" class="btn btn-outline-light">Light</button>
+<button type="button" class="btn btn-outline-dark">Dark</button>
+</div>
+<p class="text-light text-center"> Sizes:</p>
+<div class="d-flex flex-row justify-content-around mb-3">
+  <button type="button" class="btn btn-primary btn-lg">Large button</button>
+  <button type="button" class="btn btn-secondary btn-lg">Large button</button>
+</div>
+<div class="d-flex flex-row justify-content-around mb-3">
+<button type="button" class="btn btn-primary btn-sm">Small button</button>
+<button type="button" class="btn btn-secondary btn-sm">Small button</button>
+</div>
+</div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col">
+      <img src="images/photo-1.jpg" alt="">
+    </div>
+    <div class="col-6">
+      <img src="images/photo-2.jpg" alt="">
+    </div>
+    <div class="col">
+      <img src="images/photo-3.jpg" alt="">
+    </div>
+  </div>
+</div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
