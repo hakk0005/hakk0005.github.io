@@ -10,8 +10,8 @@
     
     <title>Bootstrap This Exercise</title>
   </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+  <body class="m-4 border">
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark bg-sm-light">
       <div class="container-fluid">
         <a class="navbar-brand text-light" href="#">Bootstrap This!</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,17 +45,51 @@
       </div>
     </nav>
     <h1 class=" bg-light text-danger display-3 text-center mt-8">This is My Bootstrap Exercise.</h1>
-    <h2 class="display-5 pt-1 mb-4">What is Bootstrap!</h2>
-    <p class="fs-4"> Bootstrap is a powerful free framework that makes the web development easier and faster. It is a collection of HTML, CSS and Javascript.</p>
-    <h3> The Best Two Advatages of Bootstrap.</h4>
-    <p class="fs-4"> It is the most famous framework for building mobile first responsive sites and the grid system </p>
-    <h3> How Can We Use Bootstrap?</h3>
-    <p class="fs-4"> Bootstrap is a free open source. Basically it is based on classes, and that would make us use less CSS. If we want to use bootsrtap, we have to first go the bootsrtap website, and then go to "getting started". We can search for anything like components, forms, layouts, etc. </p>
-    <h3>Components</h3>
-    <p class="fs-4"> Bootstrap comes with an extensive components library that includes buttons and lists to carousels and modals. Components are easy to integrate into any site and require no knowledge of JavaScript to use.
-    </p>
-    <h4>Components: Carouels:</h4>
-      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <h2 class="display-5 pt-1 mb-2">What is Bootstrap!</h2>
+    <p class="fs-4 mb-4"> Bootstrap is a powerful free framework that makes the web development easier and faster. It is a collection of HTML, CSS and Javascript.</p>
+    <div class="card mb-4" style="width: 20rem;">
+      <div class="card-header bg-dark text-light">
+        The Best Two Advatages of Bootstrap.
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item"> Responsive Mobile First Sites</li>
+        <li class="list-group-item"> Best Grid System which is based on 12 columns</li>
+      </ul>
+    </div>
+
+<div class="container-fluid mb-4">
+  <div class="row justify-content-between">
+    <div class="card shadow-lg col-3">
+      <img src="images/photo-1.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h3 class="card-text"> How Can We Use Bootstrap?</h3>
+        <p class="fs-4 card-text"> Bootstrap is a free open source. Basically it is based on classes, and that would make us use less CSS. If we want to use bootsrtap, we have to first go to bootsrtap website, and then go to "getting started". We can search for anything like components, forms, layouts, etc. The code is already written there, we are allowed to copy and paste it. </p>
+      </div>
+    </div>
+    
+
+    <div class="card shadow-lg col-3">
+      <img src="images/photo-3.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h3 class="card-text">Components</h3>
+        <p class="fs-4 card-text"> Bootstrap comes with an extensive components library that includes buttons and lists to carousels and modals. Components are easy to integrate into any site and require no knowledge of JavaScript to use.
+        </p>
+      </div>
+    </div>
+
+    <div class="card shadow-lg col-3">
+      <img src="images/photo-4.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h3 class="card-text"> Utilities </h3>
+        <p class="fs-4 card-text">  Bootstrap also offers a lot of utilities, we can control floating and clearfix, overflow, position, borders and borders colors, colors, shadows, spacing and sizing, etc.</p>
+      </div>
+    </div>
+    </div>
+</div>
+
+
+    <h4 class="mb-2">Components: Carouels.</h4>
+      <div id="carouselExampleControls" class="carousel slide mb-5" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img src="images/code.jpg" class="d-block w-100" alt="Code">
@@ -73,9 +107,10 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
+      
 <h4>Components: Buttons:</h4>
 <p class="fs-4">Bootstrap provides several buttons styles and sizes:</p>
-<div class="container bg-dark">
+<div class="container-fluid bg-dark mb-4">
   <p class="text-light text-center">Regular Buttons</p>
   <div class="d-flex flex-row justify-content-around mb-3">
 <button type="button" class="btn btn-primary">Primary</button>
@@ -108,18 +143,14 @@
 <button type="button" class="btn btn-secondary btn-sm">Small button</button>
 </div>
 </div>
-<div class="container-fluid">
-  <div class="row">
-    <div class="col">
-      <img src="images/photo-1.jpg" alt="">
-    </div>
-    <div class="col-6">
-      <img src="images/photo-2.jpg" alt="">
-    </div>
-    <div class="col">
-      <img src="images/photo-3.jpg" alt="">
-    </div>
-  </div>
+
+<div class="alert alert-danger">
+  <h3> Bootstrap Disadvantages:</h3>
+  <ul>
+    <li class="fs-4"> When working with bootstrap there will be lots of style overrides, and that will need time.</li>
+    <li class="fs-4"> We won't be actually learning how to code when using bootstrap.</li>
+  </ul>
+
 </div>
 
     <!-- Optional JavaScript; choose one of the two! -->
