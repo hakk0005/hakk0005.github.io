@@ -57,39 +57,44 @@
       </ul>
     </div>
 
-<div class="container-fluid mb-4">
-  <div class="row justify-content-between">
-    <div class="card shadow-lg col-3">
-      <img src="images/photo-1.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h3 class="card-text"> How Can We Use Bootstrap?</h3>
-        <p class="fs-4 card-text"> Bootstrap is a free open source. Basically it is based on classes, and that would make us use less CSS. If we want to use bootsrtap, we have to first go to bootsrtap website, and then go to "getting started". We can search for anything like components, forms, layouts, etc. The code is already written there, we are allowed to copy and paste it. </p>
-      </div>
-    </div>
-    
+<div class="container-fluid">
+  <div class="row gx-4">
+    <div class="col-sm-12 col-md-6 col-lg-4 mt-4">
+      <div class="card mb-4">
+        <img src="images/photo-1.jpg" class="card-img-top" alt="card-image1">
+        <div class="card-body">
+          <h2 class="card-title">How Can We Use Bootstrap?</h2>
+          <p class="card-text">Bootstrap is a free open source. Basically it is based on classes, and that would make us use less CSS. If we want to use bootsrtap, we have to first go to bootsrtap website, and then go to "getting started". We can search for anything like components, forms, layouts, etc. The code is already written there, we are allowed to copy and paste it.</p>
+          </div>
+          </div>
+          </div>
 
-    <div class="card shadow-lg col-3">
-      <img src="images/photo-3.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h3 class="card-text">Components</h3>
-        <p class="fs-4 card-text"> Bootstrap comes with an extensive components library that includes buttons and lists to carousels and modals. Components are easy to integrate into any site and require no knowledge of JavaScript to use.
-        </p>
-      </div>
-    </div>
 
-    <div class="card shadow-lg col-3">
-      <img src="images/photo-4.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h3 class="card-text"> Utilities </h3>
-        <p class="fs-4 card-text">  Bootstrap also offers a lot of utilities, we can control floating and clearfix, overflow, position, borders and borders colors, colors, shadows, spacing and sizing, etc.</p>
-      </div>
-    </div>
-    </div>
+
+          <div class="col-sm-12 col-md-6 col-lg-4 mt-4">
+            <div class="card">
+              <img src="images/photo-3.jpg" class="card-img-top" alt="card-image1">
+              <div class="card-body">
+                <h2 class="card-title">Components</h2>
+                <p class="card-text">Bootstrap comes with an extensive components library that includes buttons and lists to carousels and modals. Components are easy to integrate into any site and require no knowledge of JavaScript to use.</p>
+                </div>
+                </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-4 mt-4">
+                  <div class="card">
+                    <img src="images/photo-4.jpg" class="card-img-top" alt="card-image1">
+                    <div class="card-body">
+                      <h2 class="card-title">Utilities</h2>
+                      <p class="card-text"> Bootstrap also offers a lot of utilities, we can control floating and clearfix, overflow, position, borders and borders colors, colors, shadows, spacing and sizing, etc</p>
+                      </div>
+                      </div>
+                      </div>
+                      </div>
 </div>
 
-
-    <h4 class="mb-2">Components: Carouels.</h4>
-    <p class="fs-4"> Carouels is a slideshow that allowes us to go through content. Bootstrap provides different styles of carousel , so some would be with images only and some would be with images and text. Carousel is built with CSS and Javascipt. </p>
+    <h4 class="mb-2">Components: Carousel.</h4>
+    <p class="fs-4"> Carousel is a slideshow that allowes us to go through content. Bootstrap provides different styles of carousel , so some would be with images only and some would be with images and text. Carousel is built with CSS and Javascipt. </p>
       <div id="carouselExampleControls" class="carousel slide mb-5" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -110,32 +115,28 @@
       </div>
       
 <h4>Components: Buttons. </h4>
-<p class="fs-4">Bootstrap provides several buttons styles and sizes:</p>
-<div class="container-fluid bg-dark mb-4">
-  <p class="text-light text-center">Regular Buttons</p>
-  <div class="d-flex flex-row justify-content-around mb-3">
-<button type="button" class="btn btn-primary">Primary</button>
-<button type="button" class="btn btn-secondary">Secondary</button>
-<button type="button" class="btn btn-success">Success</button>
-<button type="button" class="btn btn-danger">Danger</button>
-<button type="button" class="btn btn-warning">Warning</button>
-<button type="button" class="btn btn-info">Info</button>
-<button type="button" class="btn btn-light">Light</button>
-<button type="button" class="btn btn-dark">Dark</button>
+<p class="fs-4">Bootstrap provides several buttons styles and sizes and each color and style conveys a specific message to the user</p>
+<div class="container-fluid bg-dark mb-4 p-5">
+<p class="text-light text-center"> Regular Buttons </p>
+<div class="d-flex flex-row flex-wrap justify-content-between mb-3">
+<button type="button" class="btn btn-primary"> Primary </button>
+<button type="button" class="btn btn-secondary"> Secondary </button>
+<button type="button" class="btn btn-danger"> Danger </button>
+<button type="button" class="btn btn-warning"> Warning </button>
+<button type="button" class="btn btn-light"> Light </button>
+
 </div>
 <p class="text-light text-center">Outlined Buttons</p>
-<div class="d-flex flex-row justify-content-around mb-3">
+<div class="d-flex flex-row flex-wrap justify-content-between mb-3">
 <button type="button" class="btn btn-outline-primary">Primary</button>
 <button type="button" class="btn btn-outline-secondary">Secondary</button>
-<button type="button" class="btn btn-outline-success">Success</button>
 <button type="button" class="btn btn-outline-danger">Danger</button>
 <button type="button" class="btn btn-outline-warning">Warning</button>
-<button type="button" class="btn btn-outline-info">Info</button>
 <button type="button" class="btn btn-outline-light">Light</button>
-<button type="button" class="btn btn-outline-dark">Dark</button>
+
 </div>
 <p class="text-light text-center"> Sizes:</p>
-<div class="d-flex flex-row justify-content-around mb-3">
+<div class="d-flex flex-row flex-wrap justify-content-around mb-3">
   <button type="button" class="btn btn-primary btn-lg">Large button</button>
   <button type="button" class="btn btn-secondary btn-lg">Large button</button>
 </div>
