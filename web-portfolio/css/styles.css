@@ -1,55 +1,10 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-/* CSS RESET */
-
-/*---------------- MY CSS STYLING--------------- */
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;800&family=Playfair+Display:wght@400;700&display=swap');
 /* #002921 */
-/* Mobile First */
+/* Mobile First */ 
 body {
 	line-height: 1.5;
-	background-color: #f4e6c12c;
+	background-color: #f4e6c12c; 
+	font-family: 'Playfair Display', serif;
 }
 .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
     width: 100%;
@@ -62,20 +17,27 @@ body {
 .home nav {
 	background-color:#f4e6c165;
 }
+
 .navbar-dark .navbar-nav .nav-link {
 	color:black;
+	font-family: 'Bodoni Moda', serif;
+	font-weight: 400;
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+	font-weight: 800;
+	color: black;
 }
 
 #span {
 	background-color: #002921;
 }
 
-
 .home-main{
 	height: 800px;
 	text-align: right;
 	text-decoration: none;
 }
+
 .para{
 margin: 30px;
 padding: 10px;
@@ -95,6 +57,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 h1 {
+	font-weight: 700;
 	font-size: 36px;
 	margin-top: 20px;
 }
@@ -190,6 +153,7 @@ h3{
 }
 
 h2, h3 {
+	font-weight: 700;
 	margin-bottom: 10px;
 	text-align: center;
   }
@@ -261,7 +225,7 @@ transition: opacity 7s ease-in-out;
 
 }
 
- .skills div {
+.skills div {
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -282,15 +246,17 @@ border: 1px solid rgba( 255, 255, 255, 0.18 ); */
 }
 
 /* ------------------CONTACT ME PAGE-------------- */
+
 .contact-main {
 	margin: 0 auto;
-}
-.contact-main img{
-	display: none;
 }
 
 .contact-main p {
 	text-align: center;
+	font-size: 12px;
+}
+.me p {
+	font-size: 14px;
 }
 .form {
 	display: flex;
@@ -299,6 +265,14 @@ border: 1px solid rgba( 255, 255, 255, 0.18 ); */
 	justify-content: center;
 	align-items: center;
 }
+.first {
+	transition: transform .2s;
+	border-radius: 15px;
+}
+  .first:hover {
+	transform: scale(1.2); 
+	box-shadow: 0 8px 32px 0 rgba(8, 36, 22, 0.37);	
+  }
 
 .form div {
 background-color: #f4e6c1;
@@ -324,9 +298,67 @@ height: 150px;
 	align-items: center;
 }
 
+.form-2 {
+	margin: 0 auto;
+	padding: 10px;
+  }
+  .h5 {
+	font-size: 20px;
+	text-align:  center;
+	padding: 20px;
+	font-weight: 700;
+  }
+  .form-box{
+	padding: 30px;
+  }
+  .form-con{
+	  display: flex;
+	  flex-direction: column;
+  }
+  
+  .con {
+	margin-bottom: 15px;
+  }
+  
+  .con.message {
+	margin-top: 40px;
+  }
+  
+  .con.buttons {
+	margin-bottom: 0;
+	text-align: right;
+  }
+  
+  .form-input {
+	width: 100%;
+	padding: 10px 0;
+	background: none;
+	border: none;
+	border-bottom: 1px solid #666;
+	color: #ddd;
+	font-size: 14px;
+	text-transform: uppercase;
+	outline: none;
+	transition: border-color .2s;
+  }
+  
+  .form-input::placeholder {
+	color: #666;
+  }
+  
+  .form-input:focus {
+	border-bottom-color: #ddd;
+  }
+  
+  .form-button {
+	background: none;
+	border: none;
+	font-size: 14px;
+  }
+
 /* ---------PORTFOLIO----------- */
 
-.mockup{
+.mockup {
 	margin-bottom: 10px;
 	padding: 20px;
 }
@@ -406,8 +438,13 @@ body{
 }
 
 h1 {
- font-size: 48px;
+ font-size: 42px;
 }
+.para{
+	text-align: center;
+margin: 20%;
+}
+
 footer p{
 	font-size: 14px;
 	padding: 15px;
@@ -429,7 +466,7 @@ justify-content: space-evenly;
 	grid-area: picture;
 }
 
-.intro h2{
+.intro h2 {
 	grid-area: h;
 }
 
@@ -473,7 +510,40 @@ grid-area: head;
 }
 
 /* ----------CONTACT ME PAGE--------------- */
+.me h2 {
+	font-size: 28px;
+}
 
+
+.contact-main p {
+	font-size: 22px;
+}
+.me p {
+	font-size: 18px;
+}
+.first {
+border-radius: 20px;
+}
+
+.first:hover {
+	transform: scale(1.4); 
+	box-shadow: 0 8px 32px 0 rgba(8, 36, 22, 0.37);	
+  }
+
+.form div {
+width: 300px;
+height: 300px;
+}
+
+.fas {
+	font-size: 2.5rem;
+}
+
+h5 {
+	font-size: 25px;
+	font-weight: 800;
+	padding-bottom: 20px;
+}
 /* ----------PORTFOLIO PAGE--------------- */
 .card img {
 	display: flex;
@@ -493,6 +563,7 @@ grid-area: head;
 .home nav{
 		background-color:#f4e6c100;
 	}
+
 .home-main {
 	height: 600px;
 }
@@ -530,9 +601,56 @@ grid-area: p2;
 .fa {
 	margin: 20px;
 }
+
 /* ----------ABOUT ME PAGE--------------- */
+.intro h2 {
+font-size: 36px;
+text-align: center;
+}
+
+.about-img{
+	width: 600px;
+	height: 60vh;
+}
+
+.intro p{
+	font-size: 28px;
+	padding-left: 40px;
+}
+.intro {
+	margin: 0;
+	display: grid;
+	grid-template-columns: repeat(2, 600px);
+	column-gap: 30px;
+	text-align: center;
+}
+.ic {
+	width: 300px;
+	height: 350px;
+}
+.skills {
+	margin: 0 auto;
+}
+.skills h3{
+	font-size: 32px;
+	padding: 20px;
+}
+
+.skills p{
+	font-size: 28px;
+}
 
 /* ----------CONTACT ME PAGE--------------- */
-/* ----------PORTFOLIOPAGE--------------- */
+.first {
+	margin: 0 auto;
+	padding-top: 40px;
+}
+.form {
+	column-gap: 2rem;
+}
+.fas {
+	font-size: 3rem;
+}
+/* ----------PORTFOLIO PAGE--------------- */
 
 }
