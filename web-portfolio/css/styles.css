@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;800&family=Playfair+Display:wght@400;700&display=swap');
-/* #002921 */
 /* Mobile First */ 
 body {
 	line-height: 1.5;
@@ -51,7 +50,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 .home {
      background: url("/hakk0005.github.io/web-portfolio/images/Image-1.jpg");
 	 background-repeat: no-repeat;
-     background-attachment: fixed;
+
      background-position: center top;
      background-size: cover;
 }
@@ -96,7 +95,7 @@ footer {
 
 footer p{
 	font-size: 12px;
-	color: snow;
+	color: #f4e6c1;
 	line-height: 1.5;
 }
 .social-media{
@@ -105,7 +104,10 @@ footer p{
 	flex-direction: row;
 	justify-content: space-between;
 }
-.fa {
+.social-media a{
+	text-decoration: none;
+}
+.fab {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -118,12 +120,12 @@ footer p{
 	border-radius: 50px;
   }
   
-.fa:hover {
+.fab:hover {
 	opacity: 0.7;
 	color: black;
   }
 
-  .fa-facebook {
+  .fa-facebook-f {
 	background: #f4e6c1;
 	color:#002921;
   }
@@ -132,16 +134,16 @@ footer p{
 	background: #f4e6c1;
 	color: #002921;
   }
-  .fa-linkedin {
+  .fa-linkedin-in {
 	  background-color: #f4e6c1;
 	  color: #002921;
   }
 
 /* -----------------ABOUT ME PAGE------------------ */
 .about-img {
-	width: 300px;
-	height: 250px;
+	width: 250px;
 	margin: 0 auto;
+	padding-bottom: 5px;
 }
 
 h2{
@@ -174,6 +176,11 @@ animation-iteration-count: infinite;
 animation-timing-function: linear;
 }
 
+.mf {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 
 @keyframes spin { 
 	from { 
@@ -269,6 +276,9 @@ border: 1px solid rgba( 255, 255, 255, 0.18 ); */
 	transition: transform .2s;
 	border-radius: 15px;
 }
+.social a{
+	text-decoration: none;
+}
   .first:hover {
 	transform: scale(1.2); 
 	box-shadow: 0 8px 32px 0 rgba(8, 36, 22, 0.37);	
@@ -277,8 +287,8 @@ border: 1px solid rgba( 255, 255, 255, 0.18 ); */
 .form div {
 background-color: #f4e6c1;
 margin: 10px;
-width: 150px;
-height: 150px;
+width: 200px;
+height: 200px;
 
 }
 
@@ -288,7 +298,8 @@ height: 150px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	margin: 20px;
+	margin: 0 auto;
+	padding-top: 30px;
 }
 
 .icons {
@@ -370,7 +381,11 @@ height: 150px;
 	margin: 20px;
 	display: flex;
 	flex-direction: column;
+
 	
+  }
+  .card img {
+	  width: 100%;
   }
   
   /* On mouse-over, add a deeper shadow */
@@ -410,17 +425,21 @@ height: 150px;
 	  color: black;
   }
 
-  .x i{
-	  color:#f4e6c1;
+  .x p{
+	  padding-left: 10px;
   }
-  
+
+  .fa {
+	color:#f4e6c1;  
+	margin-bottom: 10px;
+  }
   /* Add rounded corners to the top left and the top right corner of the image */
-  .card img {
+  /* .card img {
 	border-radius: 5px 5px 0 0;
 	width: 250px;
 	height: 15vh;
 	margin: 0 auto;
-  }
+  } */
 
   .gd {
 	  margin: 0 auto;
@@ -465,7 +484,10 @@ justify-content: space-evenly;
 .about-img {
 	grid-area: picture;
 }
-
+.about-flex{
+	display: flex;
+	justify-content: center;
+}
 .intro h2 {
 	grid-area: h;
 }
@@ -476,8 +498,7 @@ justify-content: space-evenly;
 
 .about-img {
 	float: left;
-	width: 400px;
-	height: 30vh;
+	width: 300px;
 	margin-left: 0;
 }
 .ic{
@@ -514,7 +535,6 @@ grid-area: head;
 	font-size: 28px;
 }
 
-
 .contact-main p {
 	font-size: 22px;
 }
@@ -535,31 +555,34 @@ width: 300px;
 height: 300px;
 }
 
+.fas, .fab {
+	text-align: center;
+}
 .fas {
 	font-size: 2.5rem;
 }
-
 h5 {
 	font-size: 25px;
 	font-weight: 800;
 	padding-bottom: 20px;
 }
 /* ----------PORTFOLIO PAGE--------------- */
-.card img {
-	display: flex;
-	flex-wrap: wrap;
-	width: 400px;
-	height: 30vh;
+h2{
+	font-size: 28px;
+	margin-bottom: 20px;
 }
-.sites{
+#logo {
+	width: 100px;
+}
+.sites {
 	display: grid;
 	grid-template-columns: repeat(2, auto);
-	grid-template-rows: 400px;
 }
 
 }
 
 @media screen and (min-width: 995px){
+
 .home nav{
 		background-color:#f4e6c100;
 	}
@@ -598,7 +621,7 @@ grid-area: p2;
 	grid-area: social;
 	justify-content: center;
 }
-.fa {
+.fab {
 	margin: 20px;
 }
 
@@ -609,8 +632,7 @@ text-align: center;
 }
 
 .about-img{
-	width: 600px;
-	height: 60vh;
+	width: 500px;
 }
 
 .intro p{
@@ -650,7 +672,22 @@ text-align: center;
 }
 .fas {
 	font-size: 3rem;
+	margin: 0 auto;
+	padding-bottom: 5px;
 }
 /* ----------PORTFOLIO PAGE--------------- */
+h2{
+	font-size: 36px;
+}
 
+.card p, .gd p {
+font-size: 28px;
+}
+
+.sites {
+	grid-template-rows: 600px;
+}
+.gd {
+	width: 80%;
+}
 }
