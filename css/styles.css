@@ -3,9 +3,11 @@
 /* Mobile First */ 
 body {
 	line-height: 1.5;
-	background-color: #f4e6c12c; 
 	font-family: 'Playfair Display', serif;
 	font-weight: 400;
+}
+.back {
+	background-color: #f4e6c12c; 
 }
 .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
     width: 100%;
@@ -50,7 +52,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 .home {
-     background: url("images/Image-1.jpg");
+     background: url("/hakk0005.github.io/images/Image-1.jpg");
 	 background-repeat: no-repeat;
 
      background-position: center top;
