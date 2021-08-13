@@ -51,7 +51,8 @@ border-radius: 10px;
 border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
-body {
+.bgg {
+	background: url('/hakk0005.github.io/images/dina.jpg');
 	 background-repeat: no-repeat;
      background-position: center top;
      background-size: cover;
