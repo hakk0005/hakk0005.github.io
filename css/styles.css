@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;800&family=Playfair+Display:wght@400;700&display=swap');
+
 
 /* Mobile First */ 
 body {
@@ -17,7 +17,7 @@ body {
 }
 
 .home nav {
-	background-color:#f4e6c165;
+	background-color: rgba(255, 255, 255, 0.315);;
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -41,9 +41,10 @@ body {
 }
 
 .para {	
+	margin:30px;
 padding: 20px;
 box-shadow: 0 8px 32px 0 rgba(18, 51, 0, 0.37);
-backdrop-filter: blur( 20px );
+background-color: rgba( 255, 255, 255, 0.25 );
 border-radius: 10px;
 border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
@@ -251,15 +252,6 @@ height: fit-content;
 margin: 10px;;
 text-align: center;
 padding: 20px;
-
-
-/* border: #002921 solid 1px;
-border-radius: 20px;
-padding: 20px;
-background: rgba( 255, 255, 255, 0.60 );
-box-shadow: 0 8px 32px 0 rgba(8, 36, 22, 0.37);
-border-radius: 10px;
-border: 1px solid rgba( 255, 255, 255, 0.18 ); */
 }
 
 /* ------------------CONTACT ME PAGE-------------- */
