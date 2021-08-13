@@ -5,10 +5,9 @@ body {
 	line-height: 1.5;
 	font-family: 'Playfair Display', serif;
 	font-weight: 400;
-}
-.back {
 	background-color: #f4e6c12c; 
 }
+
 .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
     width: 100%;
     padding-right: var(--bs-gutter-x,.0rem);
@@ -42,22 +41,30 @@ body {
 }
 
 .para{
+	background-image: url('/hakk0005.github.io/images/dina.jpg');
+	background-position: center;
+background-attachment: fixed;
+background-repeat: no-repeat;
+background-size: cover;
 margin: 30px;
 padding: 20px;
-background: rgba( 255, 255, 255, 0.60 );
 box-shadow: 0 8px 32px 0 rgba(18, 51, 0, 0.37);
 backdrop-filter: blur( 20px );
 border-radius: 10px;
 border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
-.home {
-	background: url ('/hakk0005.github.io/images/dina.jpg');
+.home-img {
+	width: 700px;
+}
+
+/* .home-main {
+	background: url('/hakk0005.github.io/images/');
 	 background-repeat: no-repeat;
 	 background-attachment: fixed;
      background-position: center top;
      background-size: cover;
-}
+} */
 
 h1 {
 	font-weight: 700;
