@@ -40,13 +40,7 @@ body {
 	text-decoration: none;
 }
 
-.para{
-	background-image: url('/hakk0005.github.io/images/dina.jpg');
-	background-position: center;
-background-attachment: fixed;
-background-repeat: no-repeat;
-background-size: cover;
-margin: 30px;
+.para {	
 padding: 20px;
 box-shadow: 0 8px 32px 0 rgba(18, 51, 0, 0.37);
 backdrop-filter: blur( 20px );
@@ -58,18 +52,18 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 	width: 700px;
 }
 
-/* .home-main {
-	background: url('/hakk0005.github.io/images/');
-	 background-repeat: no-repeat;
-	 background-attachment: fixed;
-     background-position: center top;
-     background-size: cover;
-} */
 
 h1 {
 	font-weight: 700;
 	font-size: 36px;
 	margin-top: 20px;
+}
+
+.home {
+background: url('/hakk0005.github.io/images/dina.jpg');
+background-position: top center;
+background-repeat: no-repeat;
+background-size: cover;
 }
 
 .main-p{
@@ -395,7 +389,7 @@ height: 200px;
 	padding: 20px;
 }
 .card {
-	/* Add shadows to create the "card" effect */
+
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 	transition: 0.3s;
 	border-radius: 5px; 
@@ -409,12 +403,12 @@ height: 200px;
 	  width: 100%;
   }
   
-  /* On mouse-over, add a deeper shadow */
+ 
   .card:hover {
 	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   }
   
-  /* Add some padding inside the card container */
+  
   .web{
 	padding: 2px 16px;
 	display: grid;
@@ -454,13 +448,8 @@ height: 200px;
 	color:#f4e6c1;  
 	margin-bottom: 10px;
   }
-  /* Add rounded corners to the top left and the top right corner of the image */
-  /* .card img {
-	border-radius: 5px 5px 0 0;
-	width: 250px;
-	height: 15vh;
-	margin: 0 auto;
-  } */
+  
+ 
 
   .gd {
 	  margin: 0 auto;
