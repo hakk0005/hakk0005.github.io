@@ -8,3 +8,5 @@ I learned that I really like web development. I tried using everything we learne
 ### List of Assets and Rescourses! 
 For fonts, I used Playfair Display and Bodoni Mode from [GoogleFonts](https://fonts.google.com/).
 I used a wave in the footer from [Getwaves](https://getwaves.io/)
+Slide show and hamburger menu [Bootstrap](https://getbootstrap.com/docs/5.1/getting-started/introduction/)
+For Icons [Fontawesome](https://fontawesome.com/v5.15/icons?d=gallery&p=2)
